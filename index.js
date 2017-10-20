@@ -76,12 +76,10 @@ async function loadSite(url) {
 }
 
 function tick() {
-	if(queue.length > 0) {
+	while(queue.length > 0) {
 		let url = queue.shift();
 		loadSite(url);
 	}
-	getID("user-count").innerHTML = userCount();
-	getID("fetch-count").innerHTML = fetching();
 	requestAnimationFrame(tick);
 }
 
