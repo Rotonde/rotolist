@@ -1,0 +1,32 @@
+@font-face {
+	font-family: 'noto_sans';
+	src: url('dat://c4ffbbfabc5a7e8e9c2f7db710c163db88adb22e3921c8a62d7f2004fe578076/fonts/noto_sans.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body { font-family: "Noto Sans", "sans-serif"; font-size: 14px}
+#userlist 
+{
+	list-style-type: none;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+}
+#userlist li 
+{
+	width: 120px;
+	height: 120px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+#userlist li img 
+{
+	width: 100px;
+	height: 100px;
+}
