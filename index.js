@@ -87,8 +87,8 @@ async function main() {
 	getID("discover-form").onsubmit = async (e)=>{
 		e.preventDefault();
 		queue = [];
-		knownUsers = [];
-		loadedUsers = [];
+		knownUsers = {};
+		loadedUsers = {};
 		status = {};
 		getID("user-count").innerHTML = '0';
 		getID("userlist").innerHTML = '';
